@@ -5,11 +5,13 @@
 
 nav {
     margin-bottom: 20px;
+    background-color: white;
+    font-size: 120%;
 }
 
 nav > ul {
     list-style-type: none;
-    border: 2px solid black;
+    border: 2px solid lightyellow;
     height: 40px;
     display: flex;
     justify-content: space-around;
@@ -28,8 +30,13 @@ nav > ul > li > a:hover {
 
 header {
     text-align: center;
+    margin: 30px 0px;
 }
 
 header > h1 {
     margin-bottom: 10px;
+}
+
+body {
+    background-color: linen;
 }
