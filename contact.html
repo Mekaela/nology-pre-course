@@ -101,8 +101,9 @@ Leave your comment here
                 let currentMessages = [];
 
                 if(window.sessionStorage.getItem("messages")) {
-                    currentMessages = JSON.parse(
-                        window.sessionStorage.getItem("messages")
+                    currentMessages = 
+                        JSON.parse(
+                            window.sessionStorage.getItem("messages")
                     );
                 }
 
@@ -110,8 +111,8 @@ Leave your comment here
                 for(let i = 0; i < currentMessages.length; i++) {
                     let listItem = "";
                     const currentMessage = currentMessages[i];
-                    listItem += `<dt>${currentMessages.fullName} - ${currentMessages.email}</dt>`;
-                    listItem += `<dd>${currentMessages.feedbackType}: ${currentMessages.comment}</dd>`;
+                    listItem += `<dt>${currentMessage.fullName} - ${currentMessage.email}</dt>`;
+                    listItem += `<dd>${currentMessage.feedbackType}: ${currentMessage.comment}</dd>`;
                     listItem += `<br />`;
                     listItems.push(listItem);
                 }
